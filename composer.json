@@ -1,0 +1,49 @@
+{
+    "name": "voodoo/user",
+    "description": "user",
+    "keywords": [
+        "voodoo",
+        "create-user"
+    ],
+    "homepage": "https://github.com/voodoophp/create-user",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Basant Besra",
+            "email": "besrabasant@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/contracts": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.3",
+        "spatie/laravel-ray": "^1.9",
+        "vimeo/psalm": "^4.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "VooDoo\\User\\": "src"
+        }
+    },
+    "scripts": {
+        "psalm": "vendor/bin/psalm",
+        "test": "vendor/bin/phpunit --colors=always",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "VooDoo\\User\\VooDooUserServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
