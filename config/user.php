@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'model' => \App\Models\User::class
+    'model' => "App\Models\User"
 ];
